@@ -36,34 +36,34 @@
 
 - **vs**, 对Flash做写入和擦除，直接敲入可以显示相关子命令
 
-  > vs info
-  > vs assign number
-  > vs reset
-  > vs read (part) (memory address) (device start address) len
-  > vs write (part) (memory address) (device start address) len
-  > vs erase (part) (device start address) len
-  > vs scrub (part) (memory address) (device start address) len
+  > vs info 
+  > vs assign number 
+  > vs reset 
+  > vs read (part) (memory address) (device start address) len 
+  > vs write (part) (memory address) (device start address) len 
+  > vs erase (part) (device start address) len 
+  > vs scrub (part) (memory address) (device start address) len 
 
 - **vs info**, 显示当前Flash的分区结构
 
-  > Part list:
-  > name:uboot offset:0 size:c000
-  > name:item offset:c000 size:4000
-  > name:kernel0 offset:20000 size:1f0000
-  > name:system offset:290000 size:7d0000
-  > name:config offset:a60000 size:fffffffffffffc00
-  > name:uboot1 offset:210000 size:80000
-  > name:reserved offset:10400 size:fc00
-  >
-  > 其中uboot和item固定占据Flash头64KB大小的位置
+  > Part list: 
+  > name:uboot offset:0 size:c000 
+  > name:item offset:c000 size:4000 
+  > name:kernel0 offset:20000 size:1f0000 
+  > name:system offset:290000 size:7d0000 
+  > name:config offset:a60000 size:fffffffffffffc00 
+  > name:uboot1 offset:210000 size:80000 
+  > name:reserved offset:10400 size:fc00 
+  > 
+  > 其中uboot和item固定占据Flash头64KB大小的位置 
 
 - **vs write**, 写入分区
 
-  > 从（memory address）处读取内容，写入到Flash地址(device start address)，大小为len
+  > 从（memory address）处读取内容，写入到Flash地址(device start address)，大小为len 
 
 - **vs erase**, 擦除分区，最小单位是64KB大小
 
-  > 故uboot和item每次都是一并擦除掉的，擦除后两个分区都需要分别重新写入
+  > 故uboot和item每次都是一并擦除掉的，擦除后两个分区都需要分别重新写入 
 
 - **使用过程**
 
