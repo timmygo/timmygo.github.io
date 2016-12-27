@@ -1,7 +1,3 @@
-﻿---
-layout: default
----
-
 # Uboot1使用简介
 
 ---
