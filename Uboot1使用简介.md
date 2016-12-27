@@ -36,6 +36,7 @@
 
 - **vs**, 对Flash做写入和擦除，直接敲入可以显示相关子命令
 
+  > ```
   > vs info 
   > vs assign number 
   > vs reset 
@@ -43,9 +44,11 @@
   > vs write (part) (memory address) (device start address) len 
   > vs erase (part) (device start address) len 
   > vs scrub (part) (memory address) (device start address) len 
+  > ```
 
 - **vs info**, 显示当前Flash的分区结构
 
+  > ```
   > Part list: 
   > name:uboot offset:0 size:c000 
   > name:item offset:c000 size:4000 
@@ -54,6 +57,7 @@
   > name:config offset:a60000 size:fffffffffffffc00 
   > name:uboot1 offset:210000 size:80000 
   > name:reserved offset:10400 size:fc00 
+  > ```
   > 
   > 其中uboot和item固定占据Flash头64KB大小的位置 
 
