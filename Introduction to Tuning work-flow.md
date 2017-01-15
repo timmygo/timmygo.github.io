@@ -1,4 +1,4 @@
-﻿# Introduction to Tuning work-flow
+# Introduction to Tuning work-flow
 
 ---
 
@@ -40,12 +40,12 @@ The tuning work flow would be the following:
 -  Like LSH calibration, tunning tools generate parameters with the rawdata.
 
 ## Primary Denoiser tuning
-> Adjusting parameters below in tunning tools.
+   > Adjusting parameters below in tunning tools.
 
-- DNS_STRENGTH
+- DNS_STRENGTH 
   > Denoising strength.
 
-- DNS_GREYSC_PIXTHRESH_MULT
+- DNS_GREYSC_PIXTHRESH_MULT 
   > Pixel threshold multiplier used to adjust the sensitivity of colour differences for the greyscale weights. 
 
 ## Sharpening tuning/Secondary denoiser
