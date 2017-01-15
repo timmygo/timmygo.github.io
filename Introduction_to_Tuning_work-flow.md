@@ -42,10 +42,12 @@ The tuning work flow would be the following:
 ## Primary Denoiser tuning
    > Adjusting parameters below in tunning tools.
 
-- DNS_STRENGTH 
+- DNS_STRENGTH
+
   > Denoising strength.
 
-- DNS_GREYSC_PIXTHRESH_MULT 
+- DNS_GREYSC_PIXTHRESH_MULT
+
   > Pixel threshold multiplier used to adjust the sensitivity of colour differences for the greyscale weights. 
 
 ## Sharpening tuning/Secondary denoiser
